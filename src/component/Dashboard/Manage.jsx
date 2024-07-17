@@ -4,13 +4,15 @@ import {Link} from "react-router-dom";
 function Manage() {
   const [bookData,setbookData] =useState([]);
   useEffect(()=>{
-    fetch('http://localhost:8080/all-books')
+    // fetch('http://localhost:8080/all-books')
+    fetch('https://mern-book-shop-backend.onrender.com/all-books')
    .then(res=>res.json()).then(data=>setbookData(data));
  
   },[]);
 
   let deleteHandler=(id)=>{
-    fetch(`http://localhost:8080/book/${id}`,{method:'DELETE'})
+    // fetch(`http://localhost:8080/book/${id}`,{method:'DELETE'})
+    fetch(`https://mern-book-shop-backend.onrender.com/book/${id}`,{method:'DELETE'})
    .then(res=>res.json())
    .then(alert("Book deleted successfully"));
   }

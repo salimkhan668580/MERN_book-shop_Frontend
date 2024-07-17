@@ -7,7 +7,8 @@ function FavrioutBooks() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch("http://localhost:8080/all-books");
+        // const response = await fetch("http://localhost:8080/all-books");
+        const response = await fetch("https://mern-book-shop-backend.onrender.com/all-books");
         const data = await response.json();
         setBooks(data);
       } catch (error) {

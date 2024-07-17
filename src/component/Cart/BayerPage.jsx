@@ -14,7 +14,8 @@ import NotFound from '../NotFound';
   const Razor_Key=import.meta.env.VITE_RAZOR_KEY;
 let order= async()=>{
 
- let response= await fetch("http://localhost:8080/order")
+//  let response= await fetch("http://localhost:8080/order")
+ let response= await fetch("https://mern-book-shop-backend.onrender.com/order")
    let data=await response.json(response);
    const options = {
     key: Razor_Key, // Enter the Key ID generated from the Dashboard

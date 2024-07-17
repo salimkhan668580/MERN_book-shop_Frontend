@@ -56,7 +56,8 @@ const router = createBrowserRouter([
         {
             path: "/book/:id",
             element: <SignleBook/>,
-            loader:({params})=>fetch(`http://localhost:8080/book/${params.id}`)
+            // loader:({params})=>fetch(`http://localhost:8080/book/${params.id}`)
+            loader:({params})=>fetch(`https://mern-book-shop-backend.onrender.com/book/${params.id}`)
         },
     
       ]
@@ -88,7 +89,8 @@ const router = createBrowserRouter([
         {
           path:"edit/:id",
           element:<Edit/>,
-          loader:({params})=>fetch(`http://localhost:8080/book/${params.id}`)
+          // loader:({params})=>fetch(`http://localhost:8080/book/${params.id}`)
+          loader:({params})=>fetch(`https://mern-book-shop-backend.onrender.com/book/${params.id}`)
         
         
         },

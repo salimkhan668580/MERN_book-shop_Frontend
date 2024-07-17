@@ -48,7 +48,8 @@ function Edit() {
           bookPDFURL
        }
 
-        fetch(`http://localhost:8080/book/${id}`,{
+        // fetch(`http://localhost:8080/book/${id}`,{
+        fetch(`https://mern-book-shop-backend.onrender.com/book/${id}`,{
           method:"PATCH",
           headers:{
             'Content-Type':'application/json'
