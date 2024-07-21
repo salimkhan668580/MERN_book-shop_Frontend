@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from "flowbite-react";
 import { Link } from 'react-router-dom';
-
+import 'animate.css';
 function Shop() {
   const [allBooks,setAllBooks]=useState([]);
   const [searchText,setSearchText]=useState();
@@ -88,7 +88,7 @@ function Shop() {
           allBooks.map((item,index)=>(
             <Link to={`/book/${item._id}`} key={index}>
            
-            <Card  className="max-w-sm m-2">
+            <Card  className="max-w-sm m-2 animate__animated animate__zoomIn ">
               <img src={item.imageURL} alt=""  className='w-full h-[300px]'/>
               <div>
                 <h2> <b>Title:</b> {item.bookTitle}</h2>
