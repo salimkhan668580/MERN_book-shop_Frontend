@@ -42,7 +42,7 @@ function Navbar() {
         {link:"about", path:"/about"},
         {link:"Shop", path:"/shop"},
         {link:"Sell Your Book", path:"/admin/dashboard"},
-        {link:"Blog", path:"/blog"},
+   
         
     ]
   return (

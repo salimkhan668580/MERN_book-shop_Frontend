@@ -6,7 +6,7 @@ import App from "../App";
 import About from "../component/About";
 import Shop from "../Shop/Shop";
 import Home from "../component/Home";
-import Blog from "../component/Blog";
+
 import Dashboard from "../component/Dashboard/Dashboard";
 import UploadBook from "../component/Dashboard/UploadBook";
 import Manage from "../component/Dashboard/Manage";
@@ -48,11 +48,7 @@ const router = createBrowserRouter([
         },
       
         
-        {
-            path: "/blog",
-            element: <Blog />
-
-        },
+       
         {
             path: "/book/:id",
             element: <SignleBook/>,
