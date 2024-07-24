@@ -81,7 +81,7 @@ function Shop() {
       <div className='w-full my-5 py-4 '>
 
       {
-        allBooks.length===0? <h1 className='text-red-600 text-center text-xl'>No Books found</h1>
+       allBooks && allBooks.length===0? <h1 className='text-red-600 text-center text-xl'>No Books found</h1>
         :
         <div className='grid grid-cols-3 space-x-2'>
         {

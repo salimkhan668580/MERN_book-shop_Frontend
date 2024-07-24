@@ -53,7 +53,7 @@ const data={
         <div className='flex'>
         
            <div>
-            <button  className='btn px-2 py-1 font-semibold text-white bg-blue-700' onClick={()=>addTOCart(data)}>Add to Card</button>
+            <button  className='btn px-2 py-1 rounded font-semibold text-white bg-blue-700' onClick={()=>addTOCart(data)}>Add to Card</button>
            </div>
         </div>
     </div>
