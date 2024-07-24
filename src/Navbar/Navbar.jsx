@@ -45,6 +45,7 @@ function Navbar() {
    
         
     ]
+    
   return (
    <header className='w-full z-50 inter-font  bg-transparent transition-all  ease-in duration-300 fixed top-0 left-0 right-0'>
     <nav className={`py-4 lg:px-24 px-4 ${isSticky?"sticky top-0 left-0 right-0 bg-blue-300":""}`}>

@@ -56,6 +56,7 @@ function Shop() {
   return (
     <div className='my-14  py-3'>
       <div className='mt-10 py-10  bg-slate-200 text-center'>
+       
         <form >
         <select name="category"   className='w-1/2  py-1 rounded'  onChange={handelCategory} >
         <option value="">Select category</option>
